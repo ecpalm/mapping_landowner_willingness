@@ -84,6 +84,7 @@ pred_list <- purrr::pmap(
   function(var, hold_vars) get_marginal_pred(fit, var, hold_vars)) %>% 
   purrr::set_names(plot_vars$var)
 
+# Set the x axis range for all plots to be the same.
 x_range <- pred_list %>% 
   purrr::map(~ range(.x$pred)) %>% 
   unlist() %>% 
@@ -108,7 +109,7 @@ base_theme <- ggplot2::theme_classic(base_size = 16) +
     axis.title.y = ggplot2::element_text(margin = ggplot2::margin(r = 10))
   )
 
-# Creat the plot using ggplot2 and tidybayes packages
+# Create the plot using ggplot2 and tidybayes packages
 make_marginal_plot <- function(data, var, title, x_range, reverse = FALSE) {
   
   data <- data %>%
@@ -143,4 +144,5 @@ patchwork::wrap_plots(plots[c("Property_size", "Land_cover", "Income", "Age", "S
     axis.ticks = ggplot2::element_line(linewidth = .4)
 )
 
+# Save the plot
 ggplot2::ggsave("figures/plot_marginal_predictions.tiff", compression = "lzw", width = 12.5, height = 7.5, dpi = 600)

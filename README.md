@@ -24,3 +24,7 @@ Here is a list of scripts with descriptions (**additional scripts are forthcomin
 `1. Fit_logistic_regression.R` – Fit logistic regression to survey data.
 
 `2. Marginal_posterior_predictions.R` – Plot marginal posterior predicted probabilities from fitted logistic regression.
+
+`3. Plot_elpd_diff_by_variable.R` – Plot ELPD values to assess variables' ability to predict withheld data in LOO CV.
+
+`4. Sensitivity_nmar.R` – Sensitivity analysis assessing assumption of survey data responses missing at random.

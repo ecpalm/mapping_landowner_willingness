@@ -19,7 +19,7 @@ https://doi.org/
 
 # List of R scripts
 
-Here is a list of scripts with descriptions (additional scripts are forthcoming):
+Here is a list of scripts with descriptions (**additional scripts are forthcoming**):
 
 `1. Fit_logistic_regression.R` – Fit logistic regression to survey data.
 

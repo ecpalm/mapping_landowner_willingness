@@ -10,7 +10,7 @@
 #
 # Article authors: Eric Palm, Matthew Williamson, Nathan Snow, Sonja Christensen
 #
-# Script description: Plot marginal posterior predicted probabilities from 
+# Script description: 2. Plot marginal posterior predicted probabilities from 
 #                     fitted logistic regression.
 #
 # Script author: Eric Palm

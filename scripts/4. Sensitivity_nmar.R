@@ -10,7 +10,7 @@
 #
 # Article authors: Eric Palm, Matthew Williamson, Nathan Snow, Sonja Christensen
 #
-# Script description: Run sensitivity analysis to assess the degree to which 
+# Script description: 4. Run sensitivity analysis to assess the degree to which 
 #                     missing survey data responses occurred not at random.
 #
 # Script author: Eric Palm
@@ -50,8 +50,8 @@ imp_base <- mice::mice(df, m = m, print = FALSE)
 
 tictoc::toc()
 
-# --- Variable-specific delta ranges ---
-# Logic: max shift should not exceed (n_levels - 1),
+# Variable-specific delta ranges
+# Max shift in ordinal levels should not exceed (n_levels - 1),
 # and for variables with few levels, cap at ±1
 
 delta_specs <- list(
@@ -298,4 +298,4 @@ plot_data %>%
   ggplot2::scale_y_continuous(expand = ggplot2::expansion(mult = c(.005, .01)))
 
 # Save final plot
-ggsave("figures/nmar_sensitivity.tiff", compression = "lzw", height = 6, width = 7, dpi = 600, bg = "white")
+ggplot2::ggsave("figures/nmar_sensitivity.tiff", compression = "lzw", height = 6, width = 7, dpi = 600, bg = "white")

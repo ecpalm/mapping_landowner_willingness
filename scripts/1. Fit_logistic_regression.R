@@ -10,7 +10,7 @@
 #
 # Article authors: Eric Palm, Matthew Williamson, Nathan Snow, Sonja Christensen
 #
-# Script description: Fit logistic regression to survey data
+# Script description: 1. Fit logistic regression to survey data
 #
 # Script author: Eric Palm
 #

@@ -10,7 +10,7 @@
 #
 # Article authors: Eric Palm, Matthew Williamson, Nathan Snow, Sonja Christensen
 #
-# Script description: Plot differences in expected log-predictive density 
+# Script description: 3. Plot differences in expected log-predictive density 
 #                     from LOO CV between full model and models missing one 
 #                     variable
 #

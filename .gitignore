@@ -2,7 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
-spatial/tracts_no_padus.gkpg
+spatial/tracts_no_padus.gpkg
 spatial/parcels_no_padus.gpkg
 spatial/padus_no_private.gpkg
 figures/preds_map_wy.png

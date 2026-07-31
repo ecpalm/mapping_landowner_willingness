@@ -5,5 +5,4 @@
 spatial/tracts_no_padus.gpkg
 spatial/parcels_no_padus.gpkg
 spatial/padus_no_private.gpkg
-figures/preds_map_wy.png
-figures/plot_marginal_predictions.tiff
+scripts/README.md

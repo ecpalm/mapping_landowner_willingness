@@ -6,3 +6,4 @@ spatial/tracts_no_padus.gpkg
 spatial/parcels_no_padus.gpkg
 spatial/padus_no_private.gpkg
 scripts/README.md
+figures/plot_marginal_predictions.tiff

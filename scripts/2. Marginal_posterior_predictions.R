@@ -145,4 +145,4 @@ patchwork::wrap_plots(plots[c("Property_size", "Land_cover", "Income", "Age", "S
 )
 
 # Save the plot
-ggplot2::ggsave("figures/plot_marginal_predictions.tiff", compression = "lzw", width = 12.5, height = 7.5, dpi = 600)
+ggplot2::ggsave("figures/plot_marginal_predictions.png", width = 12.5, height = 7.5, dpi = 600)

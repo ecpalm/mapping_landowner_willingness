@@ -29,4 +29,4 @@ Here is a list of scripts with descriptions (**additional scripts are forthcomin
 
 `4. Sensitivity_nmar.R` – Sensitivity analysis assessing assumption of survey data responses missing at random.
 
-`5. Download_prep_parcel_data.R` – Download and prepare parcel and protected area spatial data for one state (Wyoming) for mapping predictions.
+`5. Download_prep_parcel_data.R` – Download and prepare Wyoming spatial data for tax parcels, protected areas, and census tracts to be used for mapping predictions.

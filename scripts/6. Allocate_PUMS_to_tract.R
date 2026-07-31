@@ -10,9 +10,9 @@
 #
 # Article authors: Eric Palm, Matthew Williamson, Nathan Snow, Sonja Christensen
 #
-# Script description: 6. Runs the full P-MEDM pipeline to probabilistically 
-#                     allocate individual microdata (PUMS records) to census
-#                     tracts within a single state.
+# Script description: 6. Run the full penalized maximum entropy model pipeline 
+#                     to probabilistically allocate individual microdata 
+#                     (PUMS) records to census tracts within a single state.
 #
 # Script author: Eric Palm, with code borrowed heavily from Joe Tuccillo 
 #                (https://github.com/jvtcl/pmedmize) and Nicholas Nagle
@@ -47,12 +47,12 @@ if (identical(census_api_key, "")) {
 
 focal_state <- "WY"
 
-source("scripts/6a_pmedm.R")
-source("scripts/6b_constraints.R")
-source("scripts/6c_intermediates.R")
-source("scripts/6d_build_constraints_ind.R")
-source("scripts/6e_build_constraints_geo.R")
-source("scripts/6f_build_puma_lookup.R")
+source("scripts/6a_PME_model.R")
+source("scripts/6b_Constraints.R")
+source("scripts/6c_Intermediates.R")
+source("scripts/6d_Build_constraints_ind.R")
+source("scripts/6e_Build_constraints_geo.R")
+source("scripts/6f_Build_puma_lookup.R")
 
 fips <- tigris::fips_codes %>%
   dplyr::distinct(state, state_code)

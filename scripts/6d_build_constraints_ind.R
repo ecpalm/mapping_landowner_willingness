@@ -11,10 +11,11 @@
 # Article authors: Eric Palm, Matthew Williamson, Nathan Snow, Sonja Christensen
 #
 # Script description: 6d. Definitions for ACS Summary File constraints at the 
-# individual (PUMS) level. Each function reconstructs one ACS table's cell 
-# structure from PUMS microdata, using the intermediates defined in 
-# 6c_intermediates.R. Tables: B25013 (tenure x education), B25007 
-# (tenure x age), B25118 (tenure x income).
+#                     individual (PUMS) level. Each function reconstructs one 
+#                     ACS table's cell structure from PUMS microdata, using the 
+#                     intermediates defined in 6c_Intermediates.R. 
+#                     Tables: B25013 (tenure x education), B25007 
+#                     (tenure x age), B25118 (tenure x income).
 #
 # Script authors: Joe Tuccillo (https://github.com/jvtcl/pmedmize)  
 #                 with modifications by Eric Palm

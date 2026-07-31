@@ -10,7 +10,7 @@
 #
 # Article authors: Eric Palm, Matthew Williamson, Nathan Snow, Sonja Christensen
 #
-# Script description: 6b. Helper functions for preparing P-MEDM constraints 
+# Script description: 6b. Helper functions for preparing PME model constraints 
 #                     (individual and area level) from raw ACS Summary File 
 #                     tables.
 #

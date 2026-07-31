@@ -10,7 +10,7 @@
 #
 # Article authors: Eric Palm, Matthew Williamson, Nathan Snow, Sonja Christensen
 #
-# Script description: 6d. Builds P-MEDM area-level constraints from the ACS 
+# Script description: 6d. Builds PME model area-level constraints from the ACS 
 #                         Summary File using the Census API.
 #
 # Script authors: Eric Palm, with code heavily borrowed from Joe Tuccillo 

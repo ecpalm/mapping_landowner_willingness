@@ -11,8 +11,8 @@
 # Article authors: Eric Palm, Matthew Williamson, Nathan Snow, Sonja Christensen
 #
 # Script description: 6c. Definitions for intermediate variables used to build
-#                     individual-level P-MEDM constraints from PUMS microdata: 
-#                     age, income, education, and tenure.
+#                     individual-level PME model constraints from PUMS 
+#                     microdata: age, income, education, and tenure.
 #
 # Script authors: Joe Tuccillo (https://github.com/jvtcl/pmedmize)  
 #                 with small changes by Eric Palm

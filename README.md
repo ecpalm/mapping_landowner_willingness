@@ -31,7 +31,7 @@ Here is a list of scripts with descriptions (**additional scripts are forthcomin
 
 `5. Download_prep_parcel_data.R` – Download and prepare spatial data for tax parcels, protected areas, and census tracts to be used for mapping predictions in a single state (Wyoming).
 
-`6. Download_prep_parcel_data.R` – Run the full penalized maximum entropy model pipeline to probabilistically allocate individual microdata (PUMS) records to census tracts within a single state.
+`6. Allocate_PUMS_to_tract.R` – Run the full penalized maximum entropy model pipeline to probabilistically allocate individual microdata (PUMS) records to census tracts within a single state.
 
 `6a_PME_model.R` – Wrapper around PMEDMrcpp::pmedm_solve. Written by Joe Tuccillo (https://github.com/jvtcl/pmedmize) and Nicholas Nagle (https://bitbucket.org/nnnagle/pmedmrcpp/src/master/).
 

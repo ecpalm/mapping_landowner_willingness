@@ -14,7 +14,7 @@ Article DOI: https://doi.org/10.1002/jwmg.70254
 
 # Data and code DOI: 
 
-https://doi.org/10.5281/zenodo.21479375
+https://doi.org/10.5281/zenodo.21726147
 
 
 # List of R scripts

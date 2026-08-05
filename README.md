@@ -8,7 +8,7 @@ Article DOI: https://doi.org/10.1002/jwmg.70254
 
 # Note 
 - We do not include survey respondent addresses in the survey dataset.
-- The final model used in this analysis was fitted using 20 datasets with imputed values for all missing data in the survey dataset. We include to fit this fully imputed model, but because the resulting model object is far too large for a github repository, all subsequent code in the repository uses a model fitted to a dataset with all missing values ommitted.
+- The final model used in this analysis was fitted using 20 datasets with imputed values for all missing data in the survey dataset. We include code to fit this fully imputed model, but because the resulting model object is far too large for a github repository, all subsequent code in the repository uses a model fitted to a dataset with all missing values omitted.
 - Please open the `mapping_landowner_willingness.Rproj` file to start RStudio before opening individual scripts to ensure that relative file paths in the code work correctly.
 
 

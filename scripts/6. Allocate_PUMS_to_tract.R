@@ -105,6 +105,10 @@ v <- censusapi::listCensusMetadata(name = "acs/acs5", vintage = 2023, type = "va
 puma_lookup <- build_puma_lookup(state = fips_state) %>%
   dplyr::filter(PUMA5CE %in% tp)
 
+# Some ACS variables have their values suppressed at the block group level,
+# so instead of using block groups and tracts within a PUMA, we used tracts and 
+# user-defined "supertracts" within PUMAS, where we combined two 
+# (or in some cases three) tracts together.
 constraints_trt <- build_constraints(
   v = v,
   tables = cid,
@@ -134,6 +138,7 @@ pmedm_constraints_trt <- prepare_constraints_geo(constraints_trt, schema)
 saveRDS(pmedm_constraints_trt, stringr::str_c("results/pmedm_constraints_tract_", focal_state, ".rds"))
 saveRDS(pmedm_constraints_spr_trt, stringr::str_c("results/pmedm_constraints_super_tract_", focal_state, ".rds"))
 
+# Creating supertracts
 geo_lookup <- puma_lookup %>%
   dplyr::filter(trt_id %in% pmedm_constraints_trt$GEOID) %>%
   dplyr::arrange(STATEFP, PUMA5CE, trt_id) %>%

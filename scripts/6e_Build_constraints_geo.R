@@ -99,14 +99,14 @@ build_constraints <- function(v, tables, key, name, year, level, geo, verbose = 
 }
 
 # -----------------------------------------------------------------------
-# "Super tract" (PUMA-nested pairs of tracts) versions of the above, used
+# "Supertract" (PUMA-nested pairs of tracts) versions of the above, used
 # for the parent-level P-MEDM constraints.
 # -----------------------------------------------------------------------
 
 get_table_super <- function(v, table, key, name, year, level, geo, puma_tract) {
 
-  # Gets/processes a single table from censusapi, aggregated to "super
-  # tracts" (paired tracts nested within a PUMA), for estimate, margin of
+  # Gets/processes a single table from censusapi, aggregated to "supertracts" 
+  # (paired tracts nested within a PUMA), for estimate, margin of
   # error, and standard error, to match SocialExplorer table conventions.
 
   table_vars <- v$name[v$group == table]
